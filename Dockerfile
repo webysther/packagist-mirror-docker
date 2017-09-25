@@ -3,7 +3,7 @@ MAINTAINER Webysther Nunes <webysther@gmail.com>
 
 WORKDIR /packagist
 
-RUN git clone git@github.com:Webysther/mirror.git mirror
+RUN git clone https://github.com/Webysther/mirror.git mirror
 RUN cd mirror && composer install
 
 VOLUME /public
