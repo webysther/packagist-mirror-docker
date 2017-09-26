@@ -9,4 +9,4 @@ RUN cp /packagist/mirror/.env.example /packagist/mirror/.env
 
 VOLUME /public
 
-CMD cd /packagist/mirror && php bin/mirror create
+CMD cd /packagist/mirror && php bin/mirror create --no-progress --no-ansi
