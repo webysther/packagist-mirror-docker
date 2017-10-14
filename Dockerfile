@@ -1,4 +1,4 @@
-FROM composer
+FROM webysther/composer-debian
 MAINTAINER Webysther Nunes <webysther@gmail.com>
 
 WORKDIR /packagist
