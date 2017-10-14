@@ -9,4 +9,4 @@ COPY .env /packagist/mirror/.env
 
 VOLUME /public
 
-CMD cd /packagist/mirror && while sleep 10; do php bin/mirror create --loop --no-progress --no-ansi; done
+CMD cd /packagist/mirror && while sleep 10; do php bin/mirror create --no-progress --no-ansi; done
