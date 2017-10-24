@@ -9,4 +9,6 @@ COPY .env /packagist/mirror/.env
 
 VOLUME /public
 
-CMD while sleep 15; do php bin/mirror create --no-progress -q; done
+CMD php bin/mirror create --no-progress
+
+ENTRYPOINT ["php", "bin/mirror", "create"]
