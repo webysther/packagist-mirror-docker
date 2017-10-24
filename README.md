@@ -1,3 +1,5 @@
+[![Build Status](https://goo.gl/u9wbBD)](https://hub.docker.com/r/webysther/packagist-mirror/)
+
 # Composer Mirror Docker
 
 ## Usage
