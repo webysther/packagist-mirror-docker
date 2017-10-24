@@ -5,7 +5,7 @@
 Schedule in case of restart or another problem, the first execution create a mirror:
 
 ```bash
-* * * * * root docker run --name mirror -e URL='mymirror.com' webysther/composer-mirror
+* * * * * root docker run --name mirror --restart always -e URL='mymirror.com' webysther/composer-mirror
 ```
 
 You can add more mirrors with additional URL's separated by comma:
@@ -22,10 +22,8 @@ Main mirror is used to get providers and fallback in case of error on data mirro
 
 ## Customization of behavior
 
-You can change `CMD` with you own `Dockerfile` or change schedule like this:
-
 ```bash
-docker run --rm --name mirror -v /var/www/html:/public webysther/composer-mirror php bin/mirror create
+docker run --name mirror --restart always -v /var/www/html:/public webysther/composer-mirror -vv
 ```
 
 ## Don't use alpine version

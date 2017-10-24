@@ -9,6 +9,4 @@ COPY .env /packagist/mirror/.env
 
 VOLUME /public
 
-CMD php bin/mirror create --no-progress
-
-ENTRYPOINT ["php", "bin/mirror", "create"]
+ENTRYPOINT ["php", "bin/mirror", "create", "--no-progress"]
