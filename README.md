@@ -1,13 +1,13 @@
 [![Build Status](https://goo.gl/u9wbBD)](https://hub.docker.com/r/webysther/packagist-mirror/)
 
-# Composer Mirror Docker
+# Docker for Packagist Mirror
 
 ## Usage
 
 Schedule in case of restart or another problem, the first execution create a mirror:
 
 ```bash
-* * * * * root docker run --name mirror --restart always -v /var/www/html:/public -e URL='mymirror.com' webysther/composer-mirror
+* * * * * root docker run --name mirror --restart always -v /var/www/html:/public -e URL='mymirror.com' webysther/packagist-mirror
 ```
 
 Because [restart policies](https://docs.docker.com/engine/reference/run/#restart-policies-restart), if not have updates, restart increase delay for every restart.

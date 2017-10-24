@@ -3,7 +3,7 @@ MAINTAINER Webysther Nunes <webysther@gmail.com>
 
 WORKDIR /packagist
 
-RUN git clone --depth 1 https://github.com/Webysther/mirror.git .
+RUN git clone --depth 1 https://github.com/Webysther/packagist-mirror.git .
 RUN composer install --no-progress --no-ansi --no-dev --optimize-autoloader
 COPY .env .env
 
