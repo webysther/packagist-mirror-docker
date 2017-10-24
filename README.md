@@ -5,7 +5,7 @@
 Schedule in case of restart or another problem, the first execution create a mirror:
 
 ```bash
-* * * * * root docker run --name mirror --restart always -e URL='mymirror.com' webysther/composer-mirror
+* * * * * root docker run --name mirror --restart always -v /var/www/html:/public -e URL='mymirror.com' webysther/composer-mirror
 ```
 
 You can add more mirrors with additional URL's separated by comma:
