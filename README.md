@@ -20,12 +20,10 @@ Main mirror is used to get providers and fallback in case of error on data mirro
 -e MAIN_MIRROR='https://packagist.com.br'
 ```
 
-## Customization of behavior
+You also can change parallel connections for every mirror:
 
 ```bash
-docker run --name mirror --restart always -v /var/www/html:/public webysther/composer-mirror -vv
+-e MAX_CONNECTIONS=10
 ```
 
-## Don't use alpine version
-
-Due performance optimizations alpine version is very slow at this moment, keep debian based version of composer.
+All enviroment options stay on `.env` file.
