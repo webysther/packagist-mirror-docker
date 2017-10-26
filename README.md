@@ -7,7 +7,7 @@
 Schedule in case of restart or another problem, the first execution create a mirror:
 
 ```bash
-* * * * * root docker run --name mirror --restart always -v /var/www/html:/public -e URL='mymirror.com' webysther/packagist-mirror
+* * * * * root docker run --name mirror --rm -v /var/www/html:/public -e URL='mymirror.com' webysther/packagist-mirror
 ```
 
 Because [restart policies](https://docs.docker.com/engine/reference/run/#restart-policies-restart), if not have updates, restart increase delay for every restart.
