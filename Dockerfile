@@ -9,5 +9,7 @@ COPY .env .env
 
 VOLUME /public
 
-ENTRYPOINT ["php", "/packagist/bin/mirror", "create"]
-CMD ["--no-progress"]
+ENV SLEEP 15
+
+# with while access to files keep to memory cache
+CMD while sleep SLEEP; do php bin/mirror create --no-progress; done
