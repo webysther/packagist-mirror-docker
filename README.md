@@ -10,8 +10,6 @@ Schedule in case of restart or another problem, the first execution create a mir
 * * * * * root docker run --name mirror --rm -v /var/www/html:/public -e URL='mymirror.com' webysther/packagist-mirror
 ```
 
-Because [restart policies](https://docs.docker.com/engine/reference/run/#restart-policies-restart), if not have updates, restart increase delay for every restart.
-
 You can add more mirrors with additional URL's separated by comma:
 
 ```bash
