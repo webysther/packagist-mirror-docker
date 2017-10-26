@@ -12,4 +12,4 @@ VOLUME /public
 ENV SLEEP 15
 
 # with while access to files keep to memory cache
-CMD while sleep SLEEP; do php bin/mirror create --no-progress; done
+CMD while sleep $SLEEP; do php bin/mirror create --no-progress; done
