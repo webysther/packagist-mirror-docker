@@ -7,7 +7,7 @@
 Schedule in case of restart or another problem, the first execution create a mirror:
 
 ```bash
-* * * * * root docker run --name mirror --rm -v /var/www/html:/public -e URL='mymirror.com' webysther/packagist-mirror
+* * * * * root docker run --name mirror --rm -v /var/www/html:/public -e MAINTAINER_REPO='mymirror.com' webysther/packagist-mirror
 ```
 
 You can add more mirrors with additional URL's separated by comma:
