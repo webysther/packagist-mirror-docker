@@ -11,5 +11,8 @@ VOLUME /public
 
 ENV SLEEP 15
 
+ENV TZ=America/Sao_Paulo
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+
 # with while access to files keep to memory cache
 CMD while sleep $SLEEP; do php bin/mirror create --no-progress; done
