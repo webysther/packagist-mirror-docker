@@ -2,7 +2,7 @@
 
 # Docker for Packagist Mirror
 
-This project allows you to easily create and update a mirror of the packagist having as dependency only the docker.
+This project allows you to easily create and update a [mirror of the packagist](https://github.com/Webysther/packagist-mirror) having as dependency only the docker.
 It is possible to completely [customize the mirror](https://github.com/Webysther/packagist-mirror/blob/master/.env.example) only by using environment variable and thereby create an institutional mirror or for a particular country without any problem.
 
 We use [webysther/composer-debian](https://hub.docker.com/r/webysther/composer-debian) as alternative to [official composer on docker hub](https://hub.docker.com/_/composer) because the alpine version has issues with I/O.
