@@ -1,6 +1,6 @@
 [![Build Status](https://goo.gl/u9wbBD)](https://hub.docker.com/r/webysther/packagist-mirror/)
 [![Docker pulls](https://goo.gl/Jb5Cq4)](https://hub.docker.com/r/webysther/packagist-mirror/)
-[![Minimum PHP Version](https://goo.gl/tC3Go4)](https://php.net/)
+[![Minimum PHP Version](https://goo.gl/hAUkXA)](https://php.net/)
 [![Software License](https://goo.gl/FU2Kw1)](LICENSE)
 
 # Docker for [Packagist Mirror](https://github.com/Webysther/packagist-mirror)
