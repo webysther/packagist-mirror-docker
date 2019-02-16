@@ -2,6 +2,7 @@
 [![Docker pulls](https://goo.gl/Jb5Cq4)](https://hub.docker.com/r/webysther/packagist-mirror/)
 [![Minimum PHP Version](https://goo.gl/hAUkXA)](https://php.net/)
 [![Software License](https://goo.gl/FU2Kw1)](LICENSE)
+[![Mentioned in Awesome composer](https://awesome.re/mentioned-badge.svg)](https://github.com/jakoch/awesome-composer#packagist-mirrors)
 
 # Docker for [Packagist Mirror](https://github.com/Webysther/packagist-mirror)
 
