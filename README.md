@@ -19,6 +19,12 @@ Schedule in case of restart or another problem, the first execution create a mir
 * * * * * root docker run --name mirror --rm -v /var/www/html:/public -e MAINTAINER_REPO='mymirror.com' webysther/packagist-mirror
 ```
 
+Synchronized continuously:
+```bash
+*    *  * * * root docker run --name mirror --rm --device-read-bps /dev/xvda:600kb --device-write-bps /dev/xvda:600kb -e SLEEP=0 -v /var/www/html:/public webysther/packagist-mirror
+
+```
+
 You can add more mirrors with additional URL's separated by comma:
 
 ```bash
