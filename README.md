@@ -24,6 +24,17 @@ Synchronized continuously:
 *    *  * * * root docker run --name mirror --rm --device-read-bps /dev/xvda:600kb --device-write-bps /dev/xvda:600kb -e SLEEP=0 -v /var/www/html:/public webysther/packagist-mirror
 
 ```
+Sample used inside packagist.com.br (update docker composer every day):
+```bash
+# Every minute
+*    *  * * * root docker run --name mirror --rm --device-read-bps /dev/xvda:600kb --device-write-bps /dev/xvda:600kb -e SLEEP=0 -v /var/www/html:/public webysther/packagist-mirror
+
+# Every 1:00 AM
+0    1  * * * root docker pull webysther/packagist-mirror 
+
+# Every 2:30 AM
+30   2  * * * root service docker restart
+```
 
 You can add more mirrors with additional URL's separated by comma:
 
