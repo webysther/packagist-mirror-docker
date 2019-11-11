@@ -1,9 +1,9 @@
 [![Build Status](https://goo.gl/u9wbBD)](https://hub.docker.com/r/webysther/packagist-mirror/)
 [![Docker pulls](https://goo.gl/Jb5Cq4)](https://hub.docker.com/r/webysther/packagist-mirror/)
 [![Minimum PHP Version](https://img.shields.io/badge/php-%3E%3D%207.2-8892BF.svg?style=flat-square&maxAge=3600)](https://php.net/)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FWebysther%2Fpackagist-mirror-docker.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FWebysther%2Fpackagist-mirror-docker?ref=badge_shield)
 [![Software License](https://goo.gl/FU2Kw1)](LICENSE)
 [![Mentioned in Awesome composer](https://awesome.re/mentioned-badge.svg)](https://github.com/jakoch/awesome-composer#packagist-mirrors)
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FWebysther%2Fpackagist-mirror-docker.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FWebysther%2Fpackagist-mirror-docker?ref=badge_shield)
 
 # Docker for [Packagist Mirror](https://github.com/Webysther/packagist-mirror)
 
